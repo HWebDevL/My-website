@@ -1,0 +1,96 @@
+.nav-link {
+  color: #ffffffde;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+  color: #ffffffde !important;
+  background-color: transparent !important;
+ 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #343a40;
+  z-index: 1030;
+}
+
+  .gradient-background {
+    background: linear-gradient(270deg, #add8e6, #87cefa, #4682b4, #1e90ff);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+span{
+  color: rgb(40, 40, 163);
+  font-style: "Comic Neue" cursive;
+}  
+  
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.comic-neue-bold-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.comic-neue-bold {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+li{
+  padding:5px;
+  text-align: left;
+}
+
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  background: linear-gradient(270deg, #add8e6, #87cefa, #4682b4, #1e90ff);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 5px 0;
+  text-align: center; /* Center align the nav content */
+}
+
+body {
+  padding-top: 10px; /* Adjust according to the height of the navbar */
+}
+
+#nav-bar .nav-link {
+  color: #ffffffde;
+  font-weight: bold;
+}
+
+.nav-pills {
+  display: inline-flex; /* Make the nav-pills inline-flex to center them */
+}
+
